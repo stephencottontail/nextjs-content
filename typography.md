@@ -32,7 +32,7 @@ Here’s some more text following a heading.
 
 This paragraph contains a [link to Apple’s website](https://www.apple.com "Apple"). Isn’t that cool? Aren’t links cool? It should have hover, focus, and active states; don’t forget it. Also, I’ve changed my mind and I generally prefer underlined links. Just looks better and it helps links stand out when I use similar link and text colors, which seems to happen a lot with my design sensibilities.
 
-![I drew this](images/Snowy_Window.png "A cat peering out of a window into a blizzard")
+![I drew this](public/images/Snowy_Window.png "A cat peering out of a window into a blizzard")
 
 There’s an image. Isn’t it neat? I won’t finish the reference to *The Little Mermaid* because I don’t feel like it.
 
