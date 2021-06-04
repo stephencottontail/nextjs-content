@@ -7,7 +7,7 @@ slug: more-dynamic-routing
 category: nextjs
 ---
 
-I figured out what was wrong with [my code from last time](https://stephencottontail.dev/nextjs/dynamic-routing): I was returning an array of strings from `getStaticPaths`, but you actually have to return an array of objects:
+I figured out what was wrong with [my code from last time](/nextjs/dynamic-routing): I was returning an array of strings from `getStaticPaths`, but you actually have to return an array of objects:
 
 ```js
 // pages/[category]/index.tsx
