@@ -1,0 +1,1 @@
+Hi, I’m Stephen. I do things. Then I write about them. Actually, I’ve been [trying to write about them a lot more](https://joelhooks.com/on-writing-more), which is where this whole thing comes in. This is my space to grow whatever I need, and if I’m lucky, someone else might decide they need it too. [Terms of Service](https://www.swyx.io/digital-garden-tos/) apply.
