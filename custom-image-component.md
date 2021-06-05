@@ -3,11 +3,12 @@
 ---
 title: Custom Image Component
 date: Jun 2, 2021 at 10:42 PM
+updated: Jun 5, 2021 at 3:03 PM
 slug: custom-image-component
 category: nextjs
 ---
 
-This started out with a simple goal: use Next.JS’s cool `Image` component to take advantage of all the cool image optimizations it does behind the scenes. Unfortunately, the [sample Markdown-powered blog](https://github.com/vercel/next.js/tree/canary/examples/blog-starter) doesn’t have any images in the Markdown itself, probably because it turned out to be obnoxiously convoluted.
+This started out with a simple goal: use Next.JS’s cool `Image` component to take advantage of all the cool image optimizations it does behind the scenes. Unfortunately, the [sample Markdown-powered blog](https://github.com/vercel/next.js/tree/canary/examples/blog-starter) doesn’t have any images in the Markdown itself, probably because it turned out to be obnoxiously convoluted. **Update**: I just remembered that the sample blog uses `dangerouslySetInnerHTML` instead of converting to JSX, which is probably another reason they don’t use the `Image` component.
 
 I’m using the `remark` and `rehype` ecosystems to handle Markdown, and one cool thing that `retype-react` can do is map custom React components to HTML tags. The first problem I ran into is that Next.JS’s `Image` component requires that you pass in the height and width of the image (unless you use `layout="fill"`, which wouldn’t have worked for my particular use case) and by default, you don’t have that information. I found `rehype-image-size`, which adds height and width attributes to the `<img>` tag, but since it runs in a Node environment, it has to be run in `getStaticProps`, which meant that I had to rewrite a bit of my Markdown-processing code:
 
